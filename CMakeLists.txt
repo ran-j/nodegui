@@ -150,6 +150,7 @@ add_library(${CORE_WIDGETS_ADDON} SHARED
     "${PROJECT_SOURCE_DIR}/src/cpp/lib/QtWidgets/QDesktopWidget/qdesktopwidget_wrap.cpp"
     "${PROJECT_SOURCE_DIR}/src/cpp/lib/QtWidgets/QTextToSpeech/qtexttospeech_wrap.cpp"
     "${PROJECT_SOURCE_DIR}/src/cpp/lib/QtWidgets/QStyleFactory/qstylefactory_wrap.cpp"
+    "${PROJECT_SOURCE_DIR}/src/cpp/lib/QtWidgets/QSound/qsound_wrap.cpp"
     # Custom widgets (include them for automoc since they contain Q_OBJECT)
     "${PROJECT_SOURCE_DIR}/src/cpp/include/nodegui/QtCore/QAbstractItemModel/nabstractitemmodel.hpp"
     "${PROJECT_SOURCE_DIR}/src/cpp/include/nodegui/QtCore/QItemSelectionModel/nitemselectionmodel.hpp"
@@ -233,7 +234,6 @@ target_include_directories(${CORE_WIDGETS_ADDON} PRIVATE
     "${PROJECT_SOURCE_DIR}/src/cpp/include/nodegui"
 )
 
-
 if (WIN32)
     add_definitions(/bigobj)
     target_compile_definitions(${CORE_WIDGETS_ADDON} PRIVATE
@@ -250,4 +250,5 @@ target_link_libraries(${CORE_WIDGETS_ADDON} PRIVATE
     Qt5::Gui
     Qt5::Svg
     Qt5::TextToSpeech
+    Qt5::Multimedia
 )

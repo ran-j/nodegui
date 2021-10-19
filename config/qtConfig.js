@@ -73,8 +73,13 @@ function getMiniQtConfig() {
                     },
                     {
                         name: 'Qt Texttospeech',
-                        link: `https://download.qt.io/online/qtsdkrepository/windows_x86/desktop/qt5_5141/qt.qt5.5141.win64_msvc2017_64/5.14.1-0-202001240957qtspeech-Windows-Windows_10-MSVC2017-Windows-Windows_10-X86_64.7z`,
+                        link: `${MIRROR}/online/qtsdkrepository/windows_x86/desktop/qt5_5141/qt.qt5.5141.win64_msvc2017_64/5.14.1-0-202001240957qtspeech-Windows-Windows_10-MSVC2017-Windows-Windows_10-X86_64.7z`,
                         skipSetup: checkIfExists(path.resolve(qtHome, 'lib', 'Qt5TextToSpeech.dll')),
+                    },
+                    {
+                        name: 'Qt MultiMedia',
+                        link: `${MIRROR}/online/qtsdkrepository/windows_x86/desktop/qt5_5141/qt.qt5.5141.win64_msvc2017_64/5.14.1-0-202001240957qtmultimedia-Windows-Windows_10-MSVC2017-Windows-Windows_10-X86_64.7z`,
+                        skipSetup: checkIfExists(path.resolve(qtHome, 'bin', 'Qt5Multimedia.dll')),
                     },
                     {
                         name: 'Qt Tools',
@@ -101,7 +106,12 @@ function getMiniQtConfig() {
                     },
                     {
                         name: 'Qt Texttospeech',
-                        link: `https://download.qt.io/online/qtsdkrepository/linux_x64/desktop/qt5_5141/qt.qt5.5141.gcc_64/5.14.1-0-202001240953qtspeech-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z`,
+                        link: `${MIRROR}/online/qtsdkrepository/linux_x64/desktop/qt5_5141/qt.qt5.5141.gcc_64/5.14.1-0-202001240953qtspeech-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z`,
+                        skipSetup: checkIfExists(path.resolve(qtHome, 'lib', 'libQt5TextToSpeech.so')),
+                    },
+                    {
+                        name: 'Qt MultiMedia',
+                        link: `${MIRROR}/online/qtsdkrepository/linux_x64/desktop/qt5_5141/qt.qt5.5141.gcc_64/5.14.1-0-202001240953qtmultimedia-Linux-RHEL_7_6-GCC-Linux-RHEL_7_6-X86_64.7z`,
                         skipSetup: checkIfExists(path.resolve(qtHome, 'lib', 'libQt5TextToSpeech.so')),
                     },
                     {

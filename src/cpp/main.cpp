@@ -112,6 +112,7 @@
 #include "QtWidgets/QTreeWidget/qtreewidget_wrap.h"
 #include "QtWidgets/QTreeWidgetItem/qtreewidgetitem_wrap.h"
 #include "QtWidgets/QWidget/qwidget_wrap.h"
+#include "QtWidgets/QSound/qsound_wrap.h"
 #include "core/FlexLayout/flexlayout_wrap.h"
 #include "core/Integration/integration.h"
 // These cant be instantiated in JS Side
@@ -234,6 +235,7 @@ Napi::Object Main(Napi::Env env, Napi::Object exports) {
   QHeaderViewWrap::init(env, exports);
   QItemSelectionModelWrap::init(env, exports);
   QStyleFactoryWrap::init(env, exports);
+  QSoundWrap::init(env, exports);
   return exports;
 }
 

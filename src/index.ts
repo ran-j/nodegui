@@ -141,6 +141,7 @@ export {
 export { QTextToSpeech, State } from './lib/QtWidgets/QTextToSpeech';
 export { QStyleFactory } from './lib/QtWidgets/QStyleFactory';
 export { QSizePolicyPolicy, QSizePolicyPolicyFlag } from './lib/QtWidgets/QSizePolicy';
+export { QSound, QSoundSignals } from './lib/QtWidgets/QSound';
 
 // Core
 export { QAbstractItemModel } from './lib/QtCore/QAbstractItemModel';
