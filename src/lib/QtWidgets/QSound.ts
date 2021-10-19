@@ -50,7 +50,7 @@ export class QSound extends QAbstractSlider<QSoundSignals> {
     loops(): number {
         return this.native.loops();
     }
-    loopsRemaining() {
+    loopsRemaining(): number {
         return this.native.loopsRemaining();
     }
     setLoops(loops: number): void {

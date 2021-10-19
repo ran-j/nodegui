@@ -91,6 +91,7 @@
 #include "QtWidgets/QScrollBar/qscrollbar_wrap.h"
 #include "QtWidgets/QShortcut/qshortcut_wrap.h"
 #include "QtWidgets/QSlider/qslider_wrap.h"
+#include "QtWidgets/QSound/qsound_wrap.h"
 #include "QtWidgets/QSpinBox/qspinbox_wrap.h"
 #include "QtWidgets/QStackedWidget/qstackedwidget_wrap.h"
 #include "QtWidgets/QStandardItem/qstandarditem_wrap.h"
@@ -112,7 +113,6 @@
 #include "QtWidgets/QTreeWidget/qtreewidget_wrap.h"
 #include "QtWidgets/QTreeWidgetItem/qtreewidgetitem_wrap.h"
 #include "QtWidgets/QWidget/qwidget_wrap.h"
-#include "QtWidgets/QSound/qsound_wrap.h"
 #include "core/FlexLayout/flexlayout_wrap.h"
 #include "core/Integration/integration.h"
 // These cant be instantiated in JS Side
